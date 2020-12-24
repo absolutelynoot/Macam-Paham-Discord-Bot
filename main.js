@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '+';
+const prefix = '!';
 const fs = require('fs');
 const memberCounter = require('./counters/memberCounter.js');
 
@@ -32,8 +32,8 @@ client.on('message', message => {
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
 
-    if (command === 'command'){
-        client.commands.get('command').execute(message, args, Discord);
+    if (command === 'help'){
+        client.commands.get('help').execute(message, args, Discord);
     } 
 
 });
