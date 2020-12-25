@@ -9,6 +9,7 @@ module.exports = {
         .addFields(
             {name: 'Server Rules', value: 'type `!rules` to see the server rules'},
             {name: 'Roles and Rewards', value: 'type `!roles` to see the server roles and rewards'},
+            {name: 'Music', value: 'type `$help` in the "music" Channel to see list of commands'},
             {name: '\u200B', value: '\u200B' },
             {name: 'Moderator', value: `@Fariz-#3355`, inline: true},
             {name: 'Facebook', value: '[click here](https://www.facebook.com/Macam-Paham-101813258514341/?notif_id=1608820549422324&notif_t=page_invite_accept&ref=notif)', inline: true},

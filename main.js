@@ -19,9 +19,10 @@ client.on('ready', () => {
 })
 
 client.on('guildMemberAdd', guildMember =>{
+    const ruleChannel = guildMember.guild.channels.cache.get("746664625373839371");
     let welcomeRole = guildMember.guild.roles.cache.get("749581395088900156");
     guildMember.roles.add(welcomeRole);
-    guildMember.guild.channels.cache.get('748116650997579898').send(`Yo <@${guildMember.user.id}>, welcome to Macam Paham! GLHF`);
+    guildMember.guild.channels.cache.get('748116650997579898').send(`Yo <@${guildMember.user.id}>, welcome to **Macam Paham!** Please read ${ruleChannel} GLHF`);
     
 })
 
