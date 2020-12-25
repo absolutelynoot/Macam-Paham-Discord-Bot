@@ -35,6 +35,8 @@ client.on('message', message => {
         client.commands.get('help').execute(message, args, Discord);
     } else if (command == 'rules'){
         client.commands.get('rules').execute(message, args, Discord);
+    } else if (command == 'roles'){
+        client.commands.get('rules').execute(message, args, Discord);
     }
 
 });
