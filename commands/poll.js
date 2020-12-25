@@ -9,11 +9,11 @@ module.exports = {
         if(!args[1]){
             message.channel.send(newEmbed)
         } else {
-            let msgArgs = args.slice(1).join(" ")
+            let msgArgs = args.slice(1).join(" ");
             message.channel.send("📋" + "**" + msgArgs + "**").then(messageReaction => {
                 messageReaction.react("👍");
                 messageReaction.react("👎");
-                message.delete(1000).catch(console.error)
+                message.delete(5000).catch(console.error)
             });
         }
         
