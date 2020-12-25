@@ -9,7 +9,6 @@ const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith(
 
 for(const file of commandFiles){
     const command = require(`./commands/${file}`);
-
     client.commands.set(command.name, command);
 }
 
@@ -33,9 +32,9 @@ client.on('message', message => {
     const command = args.shift().toLowerCase();
 
     if (command === 'help'){
-        client.commands.get('help').execute(message, args, Discord);
-    } else if (command === 'rules') {
-        client.commands.get('rules').execute(message, args, Discord);
+        client.commands.get('help').execute(message, args);
+    } else if (command == 'rules'){
+        client.commands.get('rules').execute(message, args);
     }
 
 });
