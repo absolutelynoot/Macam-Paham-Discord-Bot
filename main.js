@@ -38,6 +38,8 @@ client.on('message', message => {
         client.commands.get('rules').execute(message, args, Discord);
     } else if (command == 'roles'){
         client.commands.get('roles').execute(message, args, Discord);
+    } else if (comand == 'poll') {
+        client.commands.get('poll').execute(message, args, Discord);
     }
 
 });
