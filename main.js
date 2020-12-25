@@ -1,5 +1,5 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
+const {Client, RichEmbed} = require('discord.js');
+const client = new Client();
 const prefix = '!';
 const fs = require('fs');
 const memberCounter = require('./counters/memberCounter.js');
@@ -23,7 +23,7 @@ client.on('guildMemberAdd', guildMember =>{
     let welcomeRole = guildMember.guild.roles.cache.get("749581395088900156");
     guildMember.roles.add(welcomeRole);
     guildMember.guild.channels.cache.get('748116650997579898').send(`Yo <@${guildMember.user.id}>, welcome to Macam Paham! GLHF`);
-
+    
 })
 
 client.on('message', message => {
@@ -34,7 +34,9 @@ client.on('message', message => {
 
     if (command === 'help'){
         client.commands.get('help').execute(message, args, Discord);
-    } 
+    } else if (command === 'rules') {
+        client.commands.get('rules').execute(message, args, Discord);
+    }
 
 });
 
