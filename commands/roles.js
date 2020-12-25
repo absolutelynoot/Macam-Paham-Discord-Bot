@@ -9,7 +9,7 @@ module.exports = {
         .addFields(
             {name: 'Server Roles and Rewards', value: "To honour the authenticity of this server, your ranking in this server will be based on the level of 'Paham' (understanding) but in a REVERSED ORDER - from Paham (understand) to Tak Paham (don't understand). Active members will be rewarded with special rank by simply chatting or talking while gaming.\n\nHowever, to achieve the rank of '**Tak Paham**', you need to be manually promoted by the admins."},
             {name: 'Paham (Tier 1) - Default Rank', value: '- Access to server text and voice chats' },
-            {name: 'Kurang Paham (Tier 2) - Active Players', value: '- All the benefits of Paham +\n- Unlock access to #👑private-paham  chat room\n- Unlock access to private voice chat rooms\n- Unlock access to **Music Bot ** controlled through ** music **channel `type "$help" for help)`' },
+            {name: 'Kurang Paham (Tier 2) - Active Players', value: '- All the benefits of Paham +\n- Unlock access to private chat room\n- Unlock access to private voice chat rooms\n- Unlock access to **Music Bot ** controlled through ** music **channel `type "$help" for help)`' },
             {name: "Tak Paham (Tier 3) - Frequent players", value: '- All the benefits from Kurang Paham+\n- Unlock the ability to mute and deafen other members\n- Unlock the ability to move other members'},
             {name: '\u200B', value: '\u200B' },
             {name: 'Moderator', value: `@Fariz-#3355`, inline: true},
