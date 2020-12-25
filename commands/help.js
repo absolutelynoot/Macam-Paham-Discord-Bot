@@ -1,6 +1,6 @@
 module.exports = {
-    name: 'rules',
-    description: 'rules!',
+    name: 'help',
+    description: 'help menu',
     execute(message, args, Discord){
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#F3CD98')
