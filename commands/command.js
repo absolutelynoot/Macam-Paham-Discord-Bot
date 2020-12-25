@@ -20,6 +20,9 @@ module.exports = {
         .setFooter('Contact MacamPaham Owners or Moderators if there is any issue.')
         message.author.send(newEmbed)
     }
+}
+
+module.exports = {
     name: 'rules',
     description: 'Embeds!',
     execute(message, args, Discord){
