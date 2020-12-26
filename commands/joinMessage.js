@@ -1,7 +1,7 @@
 module.exports = {
     name: 'joinMessage',
     description: 'newJoinerMessage',
-    execute(message, args, Discord){
+    execute(message, Discord){
         const newEmbed = new Discord.MessageEmbed()
         .setColor('#F3CD98')
         .setTitle('Welcome to Macam Paham!')
