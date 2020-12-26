@@ -45,7 +45,7 @@ client.on('guildMemberAdd', guildMember =>{
     .setFooter('Contact MacamPaham Owners or Moderators if there is any issue.')
     guildMember.author.send(newEmbed)
     
-}
+});
 
 client.on('message', message => {
     if(!message.content.startsWith(prefix) || message.author.bot) return;
