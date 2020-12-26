@@ -24,8 +24,9 @@ client.on('guildMemberAdd', guildMember =>{
     let welcomeRole = guildMember.guild.roles.cache.get("749581395088900156");
     guildMember.roles.add(welcomeRole);
     guildMember.guild.channels.cache.get('748116650997579898').send(`Yo <@${guildMember.user.id}>, welcome to **Macam Paham!** Please read ${ruleChannel} GLHF`);
-    const memberCount = guild.memberCount
-    const newEmbed = new Discord.MessageEmbed()
+    const memberCount = guild.memberCount;
+    const newEmbed = new Discord.MessageEmbed();
+    const guild = client.guilds.cache.get('735483140046323752');
     .setColor('#F3CD98')
     .setTitle('Welcome to Macam Paham!')
     .setThumbnail('https://scontent.fsin9-1.fna.fbcdn.net/v/t1.0-9/132798110_101959391833061_3898216952922430083_n.jpg?_nc_cat=111&ccb=2&_nc_sid=730e14&_nc_ohc=eb8KfxrJ_wsAX-Hws_l&_nc_oc=AQmcmiJmmEK8UOBd3h6rZA-Ze77Er5rDtHjslq5160-e9E1ShVgTN4jVYg2H0lK8hqw&_nc_ht=scontent.fsin9-1.fna&oh=86dbc7d388a41a0ae65f471e48f50031&oe=6008F5D1')
