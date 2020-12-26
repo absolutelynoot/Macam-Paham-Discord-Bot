@@ -44,7 +44,7 @@ client.on('guildMemberAdd', guildMember =>{
         .setImage('https://scontent.fsin9-2.fna.fbcdn.net/v/t1.0-9/131988854_101813455180988_1377945845189929269_n.jpg?_nc_cat=100&ccb=2&_nc_sid=09cbfe&_nc_ohc=KErlbSq_yNwAX8m5yrk&_nc_ht=scontent.fsin9-2.fna&oh=346919d254584ac1105e2f76d98b2882&oe=600B2B55')
         .setTimestamp()
         .setFooter('Contact MacamPaham Owners or Moderators if there is any issue.')
-    guildMember.author.send(newEmbed)
+    guildMember.send(newEmbed)
     
 });
 
