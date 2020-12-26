@@ -36,7 +36,7 @@ client.on('guildMemberAdd', guildMember =>{
             {name: 'Poll', value: 'type `!poll` to initiate a simple yes and no poll'},
             {name: 'Music', value: 'type `$help` in the "music" Channel to see list of commands'},
             {name: '\u200B', value: '\u200B' },
-            {name: 'Member Count', value: `{memberCount.toLocaleString()`, inline: true}
+            {name: 'Member Count', value: `${memberCount.toLocaleString()}`, inline: true}
             {name: 'Moderator', value: `@Fariz-#3355`, inline: true},
             {name: 'Facebook', value: '[click here](https://www.facebook.com/Macam-Paham-101813258514341/?notif_id=1608820549422324&notif_t=page_invite_accept&ref=notif)', inline: true},
         )
