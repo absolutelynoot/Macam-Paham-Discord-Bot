@@ -23,7 +23,7 @@ client.on('guildMemberAdd', guildMember =>{
     let welcomeRole = guildMember.guild.roles.cache.get("749581395088900156");
     guildMember.roles.add(welcomeRole);
     guildMember.guild.channels.cache.get('748116650997579898').send(`Yo <@${guildMember.user.id}>, welcome to **Macam Paham!** Please read ${ruleChannel} GLHF`);
-    client.commands.get('joinMessage').execute(message, Discord);
+    client.commands.get('joinMessage').execute(guildMember, Discord);
 })
 
 client.on('message', message => {
