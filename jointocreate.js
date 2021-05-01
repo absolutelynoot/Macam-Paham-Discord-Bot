@@ -109,7 +109,7 @@ module.exports = function (client) {
       //log it 
       console.log(" :: " + user.member.user.username + "#" + user.member.user.discriminator + " :: Created a Room")
       //user.member.user.send("This can be used to message the member that a new room was created")
-      await user.guild.channels.create(`${user.member.user.username}'s Room`, {
+      await user.guild.channels.create(`${user.member.user.username}'s Crib`, {
         type: 'voice',
         parent: "735483140046323754", //or set it as a category id
       }).then(async vc => {
