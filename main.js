@@ -2,8 +2,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '!';
 const fs = require('fs');
-const memberCounter = require('./counters/memberCounter.js');
-const jointocreate = require("./jointocreate.js");
+const memberCounter = require('./counters/memberCounter');
+const jointocreate = require("./jointocreate");
 jointocreate(client);
 
 client.commands = new Discord.Collection();
