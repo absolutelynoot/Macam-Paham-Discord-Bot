@@ -3,6 +3,7 @@ const client = new Discord.Client();
 const prefix = '!';
 const fs = require('fs');
 const memberCounter = require('./counters/memberCounter.js');
+const jointocreate = require("./jointocreate.js");
 
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
@@ -25,6 +26,7 @@ client.on('guildMemberAdd', guildMember =>{
     guildMember.roles.add(welcomeRole);
     guildMember.guild.channels.cache.get('748116650997579898').send(`Yo <@${guildMember.user.id}>, welcome to **Macam Paham!** Please read ${ruleChannel} GLHF`);
     const guild = client.guilds.cache.get('735483140046323752');
+
     const newEmbed = new Discord.MessageEmbed()
         .setColor('#F3CD98')
         .setTitle('Welcome to 👑Macam Paham👑')
