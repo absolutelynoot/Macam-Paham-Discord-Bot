@@ -1,4 +1,4 @@
-const config = require("./config");
+const config = require("./config.json");
 const jointocreatemap = new Map();
 module.exports = function (client) {
     const description = {
@@ -111,7 +111,7 @@ module.exports = function (client) {
       //user.member.user.send("This can be used to message the member that a new room was created")
       await user.guild.channels.create(`${user.member.user.username}'s Room`, {
         type: 'voice',
-        parent: user.channel.parent.id, //or set it as a category id
+        parent: "735483140046323754", //or set it as a category id
       }).then(async vc => {
         //move user to the new channel
         user.setChannel(vc);
@@ -132,4 +132,4 @@ module.exports = function (client) {
     }
 }
 
-//Coded by Tomato#6966!
+//Code by Tomato#6966!

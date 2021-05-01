@@ -4,6 +4,7 @@ const prefix = '!';
 const fs = require('fs');
 const memberCounter = require('./counters/memberCounter.js');
 const jointocreate = require("./jointocreate.js");
+jointocreate(client);
 
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
