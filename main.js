@@ -15,7 +15,7 @@ for(const file of commandFiles){
 }
 
 client.on('ready', () => {
-    console.log('Macam Paham Bot is online!');
+    console.log('Macam Paham Bot v1.01 is online!');
     client.user.setActivity('for !help', {type: 'WATCHING'}).catch(console.error);
     memberCounter(client);
 })
