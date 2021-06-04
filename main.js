@@ -36,7 +36,7 @@ client.on('guildMemberAdd', guildMember =>{
         .addFields(
             {name: 'Introduction', value: "For those who didn't know, the word 'Macam Paham' is a Malay phrase and a common Singaporean Slang which directly translates to 'like you know it all'.\n"},
             {name: 'Channels', value: "<#735483140046323755> - General chat, talk about anything\n<#746660822318579742> - Brag your victory, clips and highlights\n<#746650842874118184> - Latest updates and patch notes on games\n<#784954964531216444> Talk about anything PC Master Race related here"},
-            {name: 'Server Rules', value: 'type `!rules` to see the server rules'},
+            {name: 'Server Rules', value: 'typef `!rules` to see the server rules'},
             {name: 'Roles and Rewards', value: 'type `!roles` to see the server roles and rewards'},
             {name: 'Poll', value: 'type `!poll` to initiate a simple yes and no poll'},
             {name: 'Music', value: 'type `$help` in the "music" Channel to see list of commands'},
