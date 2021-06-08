@@ -37,9 +37,11 @@ module.exports = function (client) {
   let oldparentname = "unknown"
   let oldchannelname = "unknown"
   let oldchanelid = "unknown"
+
   if (oldState && oldState.channel && oldState.channel.parent && oldState.channel.parent.name) oldparentname = oldState.channel.parent.name
   if (oldState && oldState.channel && oldState.channel.name) oldchannelname = oldState.channel.name
   if (oldState && oldState.channelID) oldchanelid = oldState.channelID
+
   let newparentname = "unknown"
   let newchannelname = "unknown"
   let newchanelid = "unknown"
@@ -119,10 +121,10 @@ module.exports = function (client) {
         jointocreatemap.set(`tempvoicechannel_${vc.guild.id}_${vc.id}`, vc.id);
         //change the permissions of the channel
         await vc.overwritePermissions([
-          {
-            id: user.id,
-            allow: ['MANAGE_CHANNELS'],
-          },
+          // {
+          //   id: user.id,
+          //   allow: ['MANAGE_CHANNELS'],
+          // },
           {
             id: user.guild.id,
             allow: ['VIEW_CHANNEL'],
